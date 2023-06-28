@@ -1,0 +1,58 @@
+/* CheckoutPage.css */
+
+/* Header Styles */
+.header-title {
+    text-align: center;
+  }
+  
+  /* Section Styles */
+  .section-title {
+    text-align: center;
+  }
+  
+  .section-description {
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  .section-divider {
+    width: 50%;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  /* Payment Box Styles */
+  .box {
+    width: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+  }
+  
+  .payment-image {
+    padding-left: 60px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .payment-title {
+    padding-left: 100px;
+  }
+  
+  .payment-label {
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* WhatsApp Link Styles */
+  .whatsapp-link {
+    /* Add your custom styles for the WhatsApp link here */
+  }
+  
+  /* Section Message Styles */
+  .section-message {
+    text-align: center;
+  }
+  
