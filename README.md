@@ -1,3 +1,9 @@
+# `react-daisyui-template`
+
+My template for quickly creating new applications using React, Tailwind and daisyUI
+
+<!-- TODO: insert image here -->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
