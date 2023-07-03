@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 
 import Navbar from "./Navbar";
 import Carousel from "./Carousel";
+import SearchBar from "./searchBar/searchBar";
 import { Drawer } from "react-daisyui";
 import { default as DrawerContent } from "./Drawer";
 
@@ -14,8 +15,9 @@ export default function Page(props) {
 
   return (
       <>
-          <Navbar/>
-      <Carousel />
+      {/* <Navbar/> */}
+      {/* <Carousel /> */}
+      <SearchBar />
       </>
   
   );
