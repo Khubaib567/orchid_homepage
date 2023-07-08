@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
-function Carousel() {
+
+function Carousel(props) {
   return (
     <>
 <div class="carousel w-full">
@@ -9,13 +11,16 @@ function Carousel() {
   <div class="card-body">
     <h1 class="card-title text-black font-bold">OUR BRAND TITLE</h1>
     <p class="text-black font-semibold"><q>Experience the exceptional hospitality at Orchads Cottage Hotel Karachi, Pak</q></p>
-    <div class="join pb-10 space-x-4">
-        <button class="btn join-item bg-blue-500">Sign</button>
-        <button class="btn join-item bg-blue-500">Register</button>
+    <div class="join space-x-1">
+        
+        {props.pages.map((page) => (
+              <Link key={page.id} to={page.path}>
+                <button class="btn join-item bg-blue-500">{page.name}</button>
+              </Link>
+            ))}
+            
     </div>
-      
-  </div>
- 
+    </div> 
   </div> 
 </div> 
     </>

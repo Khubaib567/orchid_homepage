@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
-import Settings from "./pages/Settings";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import AdminLogin from "./pages/AdminLogin";
 
 export const routes = {
   home: {
@@ -9,19 +9,19 @@ export const routes = {
     path: "/",
     component: <Home />,
   },
-  about: {
-    name: "About",
-    path: "/about",
-    component: <About />,
+  login: {
+    name: "Sign In",
+    path: "/login",
+    component: <Login />,
   },
-  blog: {
-    name: "Blog",
-    path: "/blog",
-    component: <Blog />,
+  register: {
+    name: "Register",
+    path: "/register",
+    component: <Register />,
   },
-  settings: {
-    name: "Settings",
-    path: "/settings",
-    component: <Settings />,
+  adminLogin: {
+    name: "Admin Login",
+    path: "/adminLogin",
+    component: <AdminLogin />,
   }
 }

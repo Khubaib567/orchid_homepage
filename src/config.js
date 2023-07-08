@@ -10,9 +10,9 @@ import { routes } from "./routes";
 // app config
 
 export const config = {
-  title: "daisyUI",
+  title: "Orchids Cottage",
   home: routes.home,
-  pages: [routes.blog, routes.about, routes.settings],
+  pages: [routes.login,routes.register,routes.adminLogin],
   themes: [
     {
       name: "Light",

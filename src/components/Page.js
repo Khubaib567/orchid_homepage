@@ -15,9 +15,29 @@ export default function Page(props) {
 
   return (
       <>
-      {/* <Navbar/> */}
-      {/* <Carousel /> */}
-      <SearchBar />
+      <Drawer
+      open={drawerOpen}
+      onClickOverlay={toggleDrawer}
+      side={
+        <DrawerContent
+          title={props.config.title}
+          pages={props.config.pages}
+          toggleDrawer={toggleDrawer}
+        />
+      }
+    >
+      <div className="flex flex-col h-screen">
+        <Navbar
+          toggleMenu={toggleDrawer}
+          title={props.config.title}
+          pages={props.config.pages}
+          themes={props.config.themes}
+        />
+        <div className="overflow-y-scroll scrollbar-sm md:scrollbar">
+          <Outlet />
+        </div>
+      </div>
+    </Drawer>
       </>
   
   );

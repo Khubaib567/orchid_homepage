@@ -1,28 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Typography from "../components/Typography";
+import Carousel from "../components/Carousel";
+import Categories from "../components/Categories";
+import Footer from "../components/Footer";
+import Subscribe from "../components/Subscribe";
 
-export default function Home() {
+
+export default function Home(props) {
   return (
-    <Typography>
-      <h1>Home Page</h1>
-      <p>
-        Hello, world! This is a simple example of a React app. This app is based
-        on the create-react-app template, and it is intended to be used as a
-        starting point for new React projects.
-      </p>
-      <p>
-        This app is built using the following technologies:
-        <ul>
-          <li>React</li>
-          <li>React Router</li>
-          <li>React Tailwind CSS</li>
-          <li>React daisyUI</li>
-        </ul>
-      </p>
-      <p>
-        You can find the <Link to="/about">about</Link> page here.
-      </p>
-    </Typography>
+    // <Typography>
+    // <Carousel />
+    <>
+     {/* <div className="flex flex-col h-screen"> */}
+        <Carousel
+          title={props.config.title}
+          pages={props.config.pages}
+          themes={props.config.themes}
+        />
+    <Categories />
+    <br />
+    <Subscribe />
+
+    <Footer />
+
+
+      {/* </div> */}
+    </>
+   
+      
+    // </Typography>
   );
 }

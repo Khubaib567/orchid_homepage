@@ -15,7 +15,9 @@ export default function Navbar(props) {
     </button>
   </div>
   <div class="flex-1">
-    <a class="btn btn-ghost normal-case text-xl text-white">Orchids Cottage</a>
+    <Link to="/">
+    <a class="btn btn-ghost normal-case text-xl text-white">{props.title}</a>
+    </Link>
   </div>
 
   <div class="dropdown dropdown-end">
@@ -26,12 +28,12 @@ export default function Navbar(props) {
       </label>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <li>
-          <a>
-            Admin Login
-          </a>
+        {props.pages.map((page) => (
+              <Link key={page.id} to={page.path}>
+                <a>{page.name}</a>  
+              </Link>
+            ))}
         </li>
-        <li><a>Login</a></li>
-        <li><a>Register</a></li>
       </ul>
     </div>
 </div>

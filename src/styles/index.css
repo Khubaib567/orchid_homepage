@@ -35,15 +35,15 @@
 
   .scrollbar::-webkit-scrollbar-track,
   .scrollbar-sm::-webkit-scrollbar-track {
-    background: hsl(var(--b1));
+    background: white;
   }
 
   .scrollbar-sm::-webkit-scrollbar-thumb {
-    background: var(--color-bg-base-light-100);
+    background: var(--color-bg-white);
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    background: hsl(var(--b1));
+    background: hsl(white);
     border-left: 8px solid hsl(var(--b1));
     border-top: 8px solid hsl(var(--b1));
     border-bottom: 8px solid hsl(var(--b1));
@@ -51,7 +51,7 @@
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: var(--color-bg-base-light-100);
+    background: white;
   }
 
   /* to fix not pixel-perfect button group */
